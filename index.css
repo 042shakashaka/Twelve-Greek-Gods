@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(adventure.jpg);
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+    color: maroon;
+}
+
+h1:hover {
+    font-size: 35px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.description:hover {
+    font-size: 15px;
+    color: maroon;
+}
+
+.booklist {
+    max-width: 50%;
+    display: grid;
+    gap: 2rem;
+}
+
+.book {
+    word-wrap: break-word;
+    width: 100%;
+    color: aliceblue;
+    background: url(adv.jpg);
+    border-radius: 2rem;
+    padding: 3rem 3rem;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 120px;
+    height: 70px;
+    background: gray;
+    border: 2px solid black;
+    color: white;
+    border-radius: 20px;
+}
+
+.header {
+    position: fixed;
+    border: solid;
+    background-color: gray;
+    border-radius: 20px;
+    color: maroon;
+    width: 100%;
+    min-width: 20%;
+    height: 120px;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+    z-index: 50;
+    top: 0;
+}
+
+.header:hover {
+    font-size: 35px;
+    color: whitesmoke;
+    word-wrap: break-word;
+    height: 120px;
+}
+
+.o42 {
+    top: 0;
+    position: relative;
+    max-width: 50%;
+    height: 100px;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.o42 .o421 {
+    color: maroon;
+    padding-top: 30px;
+}
+
+.footer {
+    font-style: oblique;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.o422 li {
+    font-size: larger;
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.compass {
+    margin-top: 20px;
+    width: 50px;
+    border: solid black;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.gods-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 40em) {
+    .gods-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .o42,
+    .booklist {
+        max-width: 40rem;
+    }
+    .book {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+}
+
+.gods-container>* {
+    flex: 1;
+}
+
+
+/* .app {
+    display: flex;
+    flex-direction: row;
+} */
